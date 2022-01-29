@@ -1,11 +1,28 @@
+import Layout from "../components/layout";
+
 export default function Home() {
   return (
-    <div className="container flex items-center p-4 mx-auto min-h-screen justify-center">
-      <main>
-        <h1 className="font-mono text-xl code">
-          Welcome to <span className="text-purple-700">Nextjs</span>, <span className="text-indigo-700">TailwindCSS</span> and <span className="text-gray-700">TypeScript</span>
-        </h1>
-      </main>
-    </div>
+    <Layout>
+      <div style={{
+        padding: "40px 0 80px",
+        maxWidth: "1200px",
+        margin: "0 auto",
+        display: "grid",
+        gridTemplateColumns: "repeat(4,1fr)",
+        gridTemplateRows: "280px 280px 280px 280px",
+        gridGap: "1rem"
+      }}>
+        <div className="box box-2w"></div>
+        <div className="box"></div>
+        <div className="box box-2h"></div>
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box box-2h"></div>
+        <div className="box box-2w"></div>
+        <div className="box"></div>
+        <div className="box box-2w"></div>
+        <div className="box box-2w"></div>
+      </div>
+    </Layout>
   )
 }
