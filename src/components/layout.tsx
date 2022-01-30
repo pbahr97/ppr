@@ -8,7 +8,7 @@ const NavigationOptions: Option[] = [
   { label: "Home" },
   { label: "Projekte" },
   { label: "Tools" },
-  { label: "Über uns" }
+  { label: "Wir" }
 ];
 
 export default function Layout({ children }: LayoutProps) {

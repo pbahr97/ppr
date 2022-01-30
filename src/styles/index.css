@@ -17,10 +17,12 @@
     @apply text-stone-800;
   }
   button {
-    @apply px-4 py-2 rounded hover:opacity-60;
+    @apply px-4 py-2 rounded hover:opacity-60 relative z-10;
+    z-index: 10;
   }
   .mansory {
     @apply py-2 max-w-screen-2xl mx-auto grid grid-cols-4 gap-6;
+    grid-template-rows: repeat(3,280px);
   }
   .box {
     @apply shadow-inner overflow-hidden rounded-xl bg-white;
@@ -30,6 +32,13 @@
   }
   .box-2w {
     @apply col-span-2;
+  }
+
+  @media (max-width: 960px) {
+    .mansory {
+        grid-template-rows: repeat(6,280px);
+        grid-template-columns: auto;
+    }
   }
 }
 
